@@ -1,6 +1,6 @@
 public class Patterns{
     public  static void main(String[] args){
-    pattern10(6);
+    pattern10(5);
 }
     private static void pattern1(int n) {
         for(int i=1; i<=n; i++){
