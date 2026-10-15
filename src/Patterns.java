@@ -1,8 +1,7 @@
 public class Patterns{
     public  static void main(String[] args){
-    pattern5(5);
+    pattern6(5);
 }
-
     private static void pattern1(int n) {
         for(int i=1; i<=n; i++){
             for(int j=1;j<=n; j++){
@@ -43,6 +42,15 @@ public class Patterns{
         for(int i=1;i<=n;i++){
             for(int j=1;j<=n-i+1;j++){
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void pattern6(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1; j<=n-i+1;j++){
+                System.out.print(j );
             }
             System.out.println();
         }
