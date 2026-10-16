@@ -1,6 +1,6 @@
 public class Patterns{
     public  static void main(String[] args){
-    pattern14(5);
+    pattern15(5);
 }
     private static void pattern1(int n) {
         for(int i=1; i<=n; i++){
@@ -161,6 +161,15 @@ public class Patterns{
         for(int i=1;i<=n;i++){
             for(char ch='A'; ch<='A' +i-1; ch++){
                 System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+
+    private static void pattern15(int n){
+        for(int i=1;i<=n;i++){
+            for(char ch='A';ch<='A'+n-i;ch++){
+                System.out.print(ch+ " ");
             }
             System.out.println();
         }
