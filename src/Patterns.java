@@ -1,6 +1,6 @@
 public class Patterns{
     public  static void main(String[] args){
-    pattern17(5);
+    pattern18(5);
 }
     private static void pattern1(int n) {
         for(int i=1; i<=n; i++){
@@ -237,6 +237,17 @@ public class Patterns{
             //space
             for(int j=1; j<=n-i; j++){
                 System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void pattern18(int n){
+        char ch =(char) ('A' + n -1);
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                char start =(char) (ch-i+j);
+                System.out.print(start);
             }
             System.out.println();
         }
