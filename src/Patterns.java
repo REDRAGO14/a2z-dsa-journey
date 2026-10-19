@@ -1,6 +1,6 @@
 public class Patterns{
     public  static void main(String[] args){
-    pattern16(5);
+    pattern17(5);
 }
     private static void pattern1(int n) {
         for(int i=1; i<=n; i++){
@@ -214,6 +214,29 @@ public class Patterns{
             char ch=(char) ('A'+ i-1);
             for (int j=1;j<=i; j++){
                 System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+
+    private static void pattern17(int n){
+        for(int i=1; i<=n; i++){
+            char ch = 'A';
+            int breakpoint = (2*i-1)/2;
+            //space
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+
+            //character
+            for(int j=1; j<=2*i-1; j++){
+                System.out.print(ch);
+                if(j<=breakpoint) ch++;
+                else ch--;
+            }
+            //space
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
             }
             System.out.println();
         }
